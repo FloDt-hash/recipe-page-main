@@ -1,0 +1,174 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: 1.5;
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  color: #6b6b6b;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+h1,
+h2 {
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1;
+}
+
+ul,
+ol {
+  list-style-position: outside;
+  padding-left: 24px;
+}
+
+li {
+  margin-top: 8px;
+}
+
+li:first-child {
+  margin-top: 0;
+}
+
+ol li::marker {
+  font-weight: 700;
+}
+
+.recipe-card {
+  display: flex;
+  flex-direction: column;
+  gap: 38px;
+  padding-bottom: 24px;
+  width: 100%;
+  max-width: 735px;
+  background-color: #ffffff;
+}
+
+.recipe-image {
+  width: 100%;
+}
+
+.recipe-image img {
+  width: 100%;
+}
+
+.recipe-content {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  padding: 0 32px;
+}
+
+.recipe-content h1 {
+  font-size: 36px;
+  color: #111111;
+}
+
+.recipe-content h2 {
+  font-size: 28px;
+  color: #7a402a;
+}
+
+.preparation-time {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px 40px 24px 24px;
+  background-color: #fff7fc;
+  border-radius: 16px;
+}
+
+.preparation-time li {
+  margin-top: 4px;
+}
+
+.preparation-time li:first-child {
+  margin-top: 0;
+}
+
+.preparation-time h3 {
+  color: #660b2e;
+}
+
+.nutritional-values {
+  text-align: left;
+  border-collapse: collapse;
+}
+
+.nutritional-values tr th {
+  padding: 10px 0 10px 24px;
+  border-bottom: 1px solid rgba(107, 107, 107, 0.25);
+}
+
+.nutritional-values tr td {
+  font-weight: 700;
+  color: #7a402a;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(107, 107, 107, 0.25);
+}
+
+.nutritional-values tr:last-child th,
+.nutritional-values tr:last-child td {
+  border-bottom: none;
+}
+
+.attribution {
+  padding: 12px;
+  font-size: 12px;
+  color: #6b6b6b;
+}
+
+@media screen and (min-width: 735px) {
+  main {
+    padding: 144px 0;
+    background-color: #f3e5d8;
+  }
+
+  .recipe-card {
+    border-radius: 32px;
+  }
+
+  .recipe-image {
+    padding: 32px 32px 0 32px;
+  }
+
+  .recipe-image img {
+    border-radius: 10px;
+  }
+
+  .recipe-content h1 {
+    font-size: 40px;
+  }
+
+  .attribution {
+    background-color: #f3e5d8;
+  }
+}
